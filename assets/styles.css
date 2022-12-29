@@ -1,0 +1,11 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --background-main: #323232;
+  --background-blue: #2d3142;
+  --sunray: #e2aa55ff;
+  --ligth-sunray: #e4bd61ff;
+  --purple-mod: #8c86baff;
+  --space-blue: #202646ff;
+  --electric: #8bbeffff;
+}
