@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="assets/styles.css" />
     <link rel="stylesheet" href="assets/animaciones.css" />
     <link rel="stylesheet" href="assets/mediaqueries.css" />
@@ -13,13 +20,79 @@
     <header>
       <a href="#"><img src="" alt="" class="logo-img" /></a>
       <nav>
-        <ul>
-          <li></li>
+        <ul class="navbar--list">
+          <li><a href="">Inicio</a></li>
+          <li><a href="">Nostros</a></li>
+          <li><a href="">Productos</a></li>
+          <li><a href="">Contacto</a></li>
         </ul>
       </nav>
     </header>
     <main>
-      <section id="hero"></section>
+      <section id="hero">
+        <div class="hero--container">
+          <h1>Convertí tu espacio soñado en una realidad</h1>
+          <div></div>
+        </div>
+        <div class="hero--container"></div>
+      </section>
+      <section id="info">
+        <div></div>
+        <div class="info--container">
+          <h2>¿Por qué elegirnos?</h2>
+          <p>Las razones del porque deberias confiar en</p>
+          <ul>
+            <li>
+              Compra sin riesgo. Podes devolver el producto hasta 30 dias de tu
+              compra
+            </li>
+            <li>Precio honesto sin sobrecargos</li>
+            <li>Garantia y plan de proteccion en casa garantizado</li>
+            <li>
+              Productos elaborados por marcas y manufactureros reconocidos
+            </li>
+          </ul>
+          <button>Saber más</button>
+        </div>
+      </section>
+      <section id="products"></section>
+      <section id="contact">
+        <h2>Subscribite a nuestro <span>Newsletter</span></h2>
+        <p>
+          Dejanos tu email, y vamos a mantenerte al tanto de todas nuestras
+          novedades. Desde sabores nuevos, nuevos locales, hasta nuevas
+          oportunidades de descuentos, sorteos ¡Y Muchas cosas más!
+        </p>
+        <div class="contact-email">
+          <input type="email" name="" id="" />
+          <button type="submit" class="btn-add">Subscribite</button>
+        </div>
+        <div class="contact-info">
+          <div>
+            <img src="" alt="" />
+            <div class="contact-icon-social">
+              <i class="fa-brands fa-square-facebook"></i>
+              <i class="fa-brands fa-square-twitter"></i>
+              <i class="fa-brands fa-square-instagram"></i>
+              <i class="fa-brands fa-square-pinterest"></i>
+              <i class="fa-brands fa-linkedin"></i>
+            </div>
+          </div>
+          <div class="contact-info-container">
+            <p>Muthellaicecream@gmail.com</p>
+            <i class="fa-solid fa-envelope"></i>
+          </div>
+          <div class="contact-info-container">
+            <p>+54 1176892046</p>
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="contact-info-container">
+            <p>Mirar en Google Map</p>
+            <i class="fa-solid fa-location-dot map"></i>
+          </div>
+        </div>
+      </section>
     </main>
+    <script src="assets/main.js"></script>
   </body>
 </html>
