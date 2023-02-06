@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>All Wood Js</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
@@ -24,13 +24,41 @@
           alt="Logo de All Wood"
           class="logo-img"
       /></a>
-      <nav>
+      <nav class="navbar">
+        <div class="nav--menu__label">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
         <ul class="navbar--list">
           <li><a href="">Inicio</a></li>
           <li><a href="">Nosotros</a></li>
           <li><a href="">Productos</a></li>
           <li><a href="">Contacto</a></li>
         </ul>
+
+        <div class="cart--label">
+          <i class="fa-solid fa-cart-shopping cart--icon">
+            <div class="cart--bubble">0</div>
+          </i>
+        </div>
+
+        <!-- carrito  -->
+
+        <div class="cart">
+          <div class="cart--title">
+            <h2>Carrito de Compras</h2>
+            <!-- Un p que diga la cantidad de productos que hay -->
+            <!-- <i>Icono del tacho (para vaciar el carrito)</i> -->
+          </div>
+          <div class="cart--container"></div>
+          <div class="cart--bot">
+            <div class="cart--bot--total">
+              <p>Precio Total:</p>
+              <span class="price--total"></span>
+            </div>
+            <button class="btn-buy">Comprar</button>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -38,8 +66,12 @@
         <div class="hero--container">
           <h1>Convertí tu espacio soñado en una realidad</h1>
           <div class="hero--container--bttns">
-            <a href="pages/login.html"><button>Iniciar Sesion</button></a>
-            <a href="pages/register.html"><button>Registrarse</button></a>
+            <a href="pages/login.html"
+              ><button class="btn--add btn__init">Iniciar Sesion</button></a
+            >
+            <a href="pages/register.html"
+              ><button class="btn--add btn__reg">Registrarse</button></a
+            >
           </div>
 
           <div class="hero--container--info">
@@ -87,10 +119,25 @@
               marcas y manufactureros reconocidos
             </li>
           </ul>
-          <button>Saber más</button>
+          <button class="btn--add btn__info">Saber más</button>
         </div>
       </section>
-      <section id="products"></section>
+      <section id="products">
+        <h2>Productos Recomendados</h2>
+        <div class="categories">
+          <button class="category active">Todos</button>
+          <button class="category" data-category="sillas">Sillas</button>
+          <button class="category" data-category="mesas">Mesas</button>
+          <button class="category" data-category="sillones">Sillones</button>
+          <button class="category" data-category="almacenamiento">
+            Almacenamiento
+          </button>
+          <button class="category" data-category="exterior">Exterior</button>
+        </div>
+
+        <div class="products--container"></div>
+        <button class="btn--add btn__load">Ver Más</button>
+      </section>
       <section id="contact">
         <h2>Subscribite a nuestro <span>Newsletter</span></h2>
         <p>
@@ -99,7 +146,7 @@
         </p>
         <div class="contact--email">
           <input type="email" name="" id="" />
-          <button type="submit" class="btn-add">
+          <button type="submit" class="btn--add">
             <i class="fa-solid fa-paper-plane"></i>
           </button>
         </div>
@@ -128,7 +175,36 @@
           </div>
         </div>
       </section>
+
+      <div class="product--card">
+        <img
+          src="./assets/images/products/Sillas/vincent-wachowiak-Yh7HRBScECs.png"
+          alt=""
+        />
+        <h3>Name</h3>
+
+        <div class="product--price">
+          <p>Precio:</p>
+          <span>price</span>
+        </div>
+        <button class="btn--add">Comprar</button>
+      </div>
     </main>
+    <footer>
+      <div>
+        <ul class="footer--links">
+          <li><a href="#">Términos de Uso</a></li>
+          <li><a href="#">Trabajá con Nosotros</a></li>
+          <li><a href="#">Soporte</a></li>
+        </ul>
+      </div>
+      <p>
+        © 2023 All Woods | Todos los derechos reservados | Hecho por Rubén
+        Herrera
+      </p>
+    </footer>
+    <div class="add--modal"></div>
+    <script src="assets/data.js"></script>
     <script src="assets/main.js"></script>
   </body>
 </html>

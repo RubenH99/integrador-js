@@ -1,0 +1,66 @@
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 65px;
+}
+
+.navbar--list li {
+  position: relative;
+  padding: 0;
+}
+
+.navbar--list li a::after {
+  content: "";
+  height: 2px;
+  width: 100%;
+  background: var(--text-white);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.15s ease;
+}
+
+.navbar--list li a:hover::after {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.btn--add,
+.cart--icon {
+  transition: all 0.2s ease-out;
+}
+
+.btn--add:hover {
+  background-color: var(--space-blue);
+  transition: all 0.2s ease-in;
+  color: var(--text-white);
+  animation: scale 1s infinite alternate;
+}
+
+.btn__reg:hover {
+  background: linear-gradient(to right, var(--electric), var(--light-sunray));
+  color: var(--text-strong);
+  font-weight: 600;
+}
+
+.btn__init:hover {
+  background: linear-gradient(to right, var(--space-blue), var(--electric));
+
+  font-weight: 600;
+}
+
+.cart--icon:hover {
+  color: var(--light-sunray);
+  border-color: var(--sunray);
+  transition: all 0.2s ease-in;
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
