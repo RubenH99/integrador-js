@@ -645,18 +645,20 @@ section .color {
   filter: blur(150px);
 }
 section .color:nth-child(1) {
-  width: 600px;
+  width: 70vw;
   height: 600px;
   top: -350px;
   background: var(--space-blue);
   margin-top: 75px;
+  min-width: 280px;
 }
 section .color:nth-child(2) {
-  width: 600px;
+  width: 70vw;
   height: 300px;
   bottom: -50px;
-  left: 100px;
+
   background: var(--purple-mod);
+  min-width: 280px;
 }
 section .color:nth-child(3) {
   width: 300px;
@@ -678,7 +680,7 @@ section .color:nth-child(3) {
   padding: 40px;
   position: relative;
   min-height: 400px;
-  width: 400px;
+  width: 280px;
   background: rgba(255, 255, 255, 0.1);
   box-shadow: 0 25px 45px rgba(0, 0, 0, 0.1);
   border-right: 1px solid rgba(0, 0, 0, 0.2);
@@ -717,6 +719,7 @@ section .color:nth-child(3) {
 
 .login--forget {
   font-size: 14px;
+  text-align: center;
 }
 
 .login--forget a {
