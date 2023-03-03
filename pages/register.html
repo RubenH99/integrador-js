@@ -31,17 +31,54 @@
         <div class="color"></div>
         <div class="color"></div>
         <div class="color"></div>
-        <form class="login--form">
+        <form id="form" class="login--form">
           <h1 class="reg--title">Crea tu cuenta</h1>
 
-          <input type="text" placeholder="Nombre" class="login--input" />
+          <div class="form__field">
+            <input
+              type="text"
+              placeholder="Nombre"
+              class="login--input"
+              id="name"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
 
-          <input type="email" placeholder="Email" class="login--input" />
+          <div class="form__field">
+            <input
+              type="email"
+              placeholder="Email"
+              class="login--input"
+              id="email"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
 
-          <input type="password" placeholder="Password" class="login--input" />
+          <div class="form__field">
+            <input
+              type="password"
+              placeholder="Password"
+              class="login--input"
+              id="password"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
 
-          <input type="text" placeholder="Telefono" class="login--input" />
-          <button class="bttn__submit">Ingresar</button>
+          <div class="form__field">
+            <input
+              type="text"
+              placeholder="Telefono"
+              class="login--input"
+              id="phone"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
+
+          <button type="submit" class="bttn__submit">Ingresar</button>
           <p class="login--forget">
             ¿Ya tienes una cuenta? <a href="./login.html">Ingresa aquí</a>
           </p>
@@ -51,5 +88,6 @@
         </form>
       </section>
     </main>
+    <script src="../assets/validation.js"></script>
   </body>
 </html>

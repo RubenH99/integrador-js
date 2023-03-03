@@ -26,8 +26,27 @@ html {
   transform: scaleX(1);
 }
 
+.overlay {
+  position: absolute;
+  top: 65px;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 1;
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0 8px 32px 0 rgba(85, 120, 125, 0.37);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  display: none;
+}
+
+.show-overlay {
+  display: block;
+}
+
 .btn--add,
-.cart--icon {
+.cart--icon,
+.btn--buy {
   transition: all 0.2s ease-out;
 }
 
@@ -53,6 +72,29 @@ html {
 .cart--icon:hover {
   color: var(--light-sunray);
   border-color: var(--sunray);
+  transition: all 0.2s ease-in;
+}
+
+.btn--buy:hover {
+  background: linear-gradient(to right, var(--electric), var(--light-sunray));
+  font-weight: 600;
+  transition: all 0.2s ease-in;
+}
+
+.disabled:hover {
+  color: var(--electric);
+  background: var(--background-main);
+  cursor: not-allowed;
+  border: none;
+}
+
+.quantity--handler {
+  transition: all 0.2s ease-in;
+}
+
+.quantity--handler:hover {
+  cursor: pointer;
+  background-color: var(--electric);
   transition: all 0.2s ease-in;
 }
 

@@ -33,12 +33,27 @@
         <div class="color"></div>
         <form class="login--form">
           <h1 class="login--title">Iniciar Sesión</h1>
-          <input type="email" placeholder="Email" class="login--input email" />
-          <input
-            type="password"
-            placeholder="Password"
-            class="login--input password"
-          />
+          <div class="form__field">
+            <input
+              type="email"
+              placeholder="Email"
+              class="login--input email"
+              id="email"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
+          <div class="form__field">
+            <input
+              type="password"
+              placeholder="Password"
+              class="login--input password"
+              id="password"
+              autocomplete="off"
+            />
+            <small></small>
+          </div>
+
           <a href="../index.html"
             ><button class="bttn__submit">Ingresar</button></a
           >
@@ -55,5 +70,8 @@
         </form>
       </section>
     </main>
+    <script src="../assets/data.js"></script>
+    <script src="../assets/main.js"></script>
+    <script src="../assets/validation.js"></script>
   </body>
 </html>

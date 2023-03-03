@@ -1,0 +1,50 @@
+/* Tablet */
+@media (max-width: 992px) {
+  /*header*/
+
+  .navbar {
+    gap: 10px;
+  }
+
+  .cart--icon {
+    border: 0px solid;
+  }
+
+  .navbar--list {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    flex-direction: column;
+    background-color: var(--background-blue);
+    border: 2px solid var(--electric);
+    border-top: 0px;
+    border-radius: 0px 0px 15px 15px;
+    align-items: flex-start;
+    padding: 45px 30px;
+    gap: 25px;
+    z-index: 2;
+    display: none;
+  }
+
+  .navbar--list a {
+    font-size: 18px;
+  }
+
+  /* Mostramos el icono del menu */
+  .nav--menu__label {
+    display: flex;
+    order: 2;
+    cursor: pointer;
+  }
+
+  .nav--menu__label img {
+    height: 20px;
+    width: 25px;
+  }
+
+  .open-menu {
+    display: flex;
+  }
+}

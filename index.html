@@ -30,10 +30,10 @@
         </div>
 
         <ul class="navbar--list">
-          <li><a href="">Inicio</a></li>
-          <li><a href="">Nosotros</a></li>
-          <li><a href="">Productos</a></li>
-          <li><a href="">Contacto</a></li>
+          <li><a class="navbar__link" href="#hero">Inicio</a></li>
+          <li><a class="navbar__link" href="#info">Nosotros</a></li>
+          <li><a class="navbar__link" href="#products">Productos</a></li>
+          <li><a class="navbar__link" href="#contact">Contacto</a></li>
         </ul>
 
         <div class="cart--label">
@@ -47,8 +47,9 @@
         <div class="cart">
           <div class="cart--title">
             <h2>Carrito de Compras</h2>
-            <!-- Un p que diga la cantidad de productos que hay -->
-            <!-- <i>Icono del tacho (para vaciar el carrito)</i> -->
+            <button class="btn--delete">
+              <i class="fa-solid fa-trash-can"></i>
+            </button>
           </div>
           <div class="cart--container"></div>
           <div class="cart--bot">
@@ -56,9 +57,10 @@
               <p>Precio Total:</p>
               <span class="price--total"></span>
             </div>
-            <button class="btn-buy">Comprar</button>
+            <button class="btn--buy">Comprar</button>
           </div>
         </div>
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
@@ -175,20 +177,6 @@
           </div>
         </div>
       </section>
-
-      <div class="product--card">
-        <img
-          src="./assets/images/products/Sillas/vincent-wachowiak-Yh7HRBScECs.png"
-          alt=""
-        />
-        <h3>Name</h3>
-
-        <div class="product--price">
-          <p>Precio:</p>
-          <span>price</span>
-        </div>
-        <button class="btn--add">Comprar</button>
-      </div>
     </main>
     <footer>
       <div>
