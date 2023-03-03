@@ -106,3 +106,30 @@ html {
     transform: scale(1.1);
   }
 }
+
+.categories .category {
+  transition: all 0.4s ease-out;
+}
+.categories .category:hover {
+  transition: all 0.4s ease-in;
+  transform: scale(1.15);
+}
+.contact--info i {
+  transition: all 0.4s ease-out;
+}
+
+.contact--info i:hover {
+  transition: all 0.4s ease-in;
+  transform: scale(1.25);
+}
+.contact--info--container i:hover {
+  color: var(--electric);
+}
+
+.contact--icon--social i:hover {
+  color: var(--strong-sunray);
+}
+
+.contact--email button:hover {
+  border-radius: 10px;
+}

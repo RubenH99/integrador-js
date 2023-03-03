@@ -348,10 +348,38 @@ const handleQuantity = (e) => {
   if (e.target.classList.contains("down")) {
     handleMinusBtnEvent(e.target.dataset.id);
   } else if (e.target.classList.contains("up")) {
+    handlePlusBtnEvent(e.target.dataset.id);
   }
-  handlePlusBtnEvent(e.target.dataset.id);
 
   checkCartState();
+};
+
+const resetCartItems = () => {
+  cart = [];
+  checkCartState();
+};
+
+const completeCartAction = (confirmMsg, successMsg) => {
+  if (!cart.length) return;
+  if (window.confirm(confirmMsg)) {
+    resetCartItems();
+    alert(successMsg);
+    window.scrollTo(0, 0);
+  }
+};
+
+const completeBuy = () => {
+  completeCartAction(
+    "¿Desea completar su compra?",
+    "¡Gracias por comprar en All Wood!"
+  );
+};
+
+const deleteCart = () => {
+  completeCartAction(
+    "¿Esta seguro que desea eliminar todos los productos del carrito?",
+    "¡Su carrito fue vaciado!"
+  );
 };
 
 const init = () => {
@@ -370,6 +398,8 @@ const init = () => {
   document.addEventListener("DOMContentLoaded", renderCartBubble);
   products.addEventListener("click", addProduct);
   productsCart.addEventListener("click", handleQuantity);
+  buyBtn.addEventListener("click", completeBuy);
+  deleteBtn.addEventListener("click", deleteCart);
 };
 
 init();
