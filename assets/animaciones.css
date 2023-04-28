@@ -46,11 +46,13 @@ html {
 
 .btn--add,
 .cart--icon,
-.btn--buy {
+.btn--buy,
+.bttn__submit {
   transition: all 0.2s ease-out;
 }
 
-.btn--add:hover {
+.btn--add:hover,
+.bttn__submit:hover {
   background-color: var(--space-blue);
   transition: all 0.2s ease-in;
   color: var(--text-white);
@@ -96,6 +98,24 @@ html {
   cursor: pointer;
   background-color: var(--electric);
   transition: all 0.2s ease-in;
+}
+
+.login--forget a:hover {
+  color: var(--text-strong);
+  transition: all 0.5s ease-in;
+}
+
+.login--img {
+  transition: all 0.2s ease-out;
+}
+
+.login--img:hover {
+  background: linear-gradient(transparent, var(--space-blue), transparent);
+  width: 100%;
+  display: flex;
+  transition: all 0.4s ease-in;
+  justify-content: center;
+  animation: fade 0.8s ease-in forwards, slide-right 1.3s ease-in-out;
 }
 
 @keyframes scale {
