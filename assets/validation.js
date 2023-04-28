@@ -132,3 +132,45 @@ form.addEventListener("submit", (e) => {
   checkPassword();
   checkPhone();
 });
+
+// login
+
+const form2 = document.getElementById("form");
+const emailLoginInput = document.getElementById("email--login");
+const passLoginInput = document.getElementById("password--login");
+
+const checkEmailLogin = () => {
+  let valid = false;
+  const emailValue = emailLoginInput.value.trim();
+  if (isEmpty(emailLoginInput)) {
+    showError(emailLoginInput, "El mail es obligatorio");
+  } else if (!isEmailValid(emailValue)) {
+    showError(emailLoginInput, "Por favor, ingresar un mail valido");
+  } else {
+    showSuccess(emailLoginInput);
+    valid = true;
+  }
+  return valid;
+};
+
+const checkPasswordLogin = () => {
+  let valid = false;
+  const password = passLoginInput.value.trim();
+
+  if (isEmpty(password)) {
+    showError(passLoginInput, "La contraseña es obligatoria");
+  } else if (!isPassSecure(password)) {
+    showError(passLoginInput, "La contraseña ingresada no es valida");
+  } else {
+    showSuccess(passLoginInput);
+    valid = true;
+  }
+
+  return valid;
+};
+
+form2.addEventListener("submit", (e) => {
+  e.preventDefault();
+  checkEmailLogin();
+  checkPasswordLogin();
+});
